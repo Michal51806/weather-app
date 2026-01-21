@@ -32,16 +32,19 @@
 .retry-button {
   display: block;
   margin: 20px auto;
-  padding: 12px 30px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 14px 35px;
+  background: linear-gradient(135deg, #0072ff 0%, #00c6ff 100%);
   color: white;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
 }
 
 .retry-button:hover {
-  transform: scale(1.05);
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 114, 255, 0.5);
 }

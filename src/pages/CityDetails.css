@@ -1,17 +1,20 @@
 .back-button {
-  padding: 10px 20px;
-  background: #667eea;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #0072ff 0%, #00c6ff 100%);
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 600;
   margin-bottom: 20px;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
 }
 
 .back-button:hover {
-  background: #764ba2;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 114, 255, 0.5);
 }
 
 .city-details {
@@ -39,33 +42,38 @@
 }
 
 .favorite-btn-large {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border: none;
+  background: linear-gradient(135deg, #0072ff 0%, #00c6ff 100%);
+  border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 36px;
+  width: 65px;
+  height: 65px;
+  font-size: 38px;
   cursor: pointer;
   transition: all 0.3s ease;
   color: white;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
 }
 
 .favorite-btn-large:hover {
-  transform: scale(1.1);
+  transform: scale(1.15) rotate(15deg);
+  box-shadow: 0 6px 25px rgba(0, 114, 255, 0.5);
 }
 
 .favorite-btn-large.active {
-  background: #ffd700;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
   color: #ff6b6b;
+  border-color: #ffd700;
 }
 
 .current-weather {
   text-align: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 40px;
-  border-radius: 20px;
+  background: linear-gradient(135deg, #0072ff 0%, #00c6ff 100%);
+  padding: 50px;
+  border-radius: 25px;
   color: white;
   margin-bottom: 30px;
+  box-shadow: 0 10px 40px rgba(0, 114, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .large-icon {
@@ -99,15 +107,18 @@
 
 .detail-card {
   background: white;
-  padding: 20px;
-  border-radius: 15px;
+  padding: 25px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 114, 255, 0.15);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(0, 114, 255, 0.1);
 }
 
 .detail-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 114, 255, 0.25);
+  border-color: rgba(0, 114, 255, 0.3);
 }
 
 .detail-icon {
@@ -148,22 +159,26 @@
 
 .forecast-card {
   background: white;
-  padding: 20px;
-  border-radius: 15px;
+  padding: 25px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 114, 255, 0.15);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(0, 114, 255, 0.1);
 }
 
 .forecast-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 114, 255, 0.25);
+  border-color: rgba(0, 114, 255, 0.3);
 }
 
 .forecast-date {
   font-weight: bold;
-  color: #667eea;
+  color: #0072ff;
   margin-bottom: 10px;
   text-transform: capitalize;
+  font-size: 15px;
 }
 
 .forecast-icon {
